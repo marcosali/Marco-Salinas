@@ -1,0 +1,201 @@
+/* Estilos base */
+.home {
+    padding: 20px;
+    margin-left: 28%;
+    margin-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.title h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 6s steps(40, end) infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Efecto de cursor intermitente */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+
+
+.title a {
+    color: #000000;
+    text-decoration: none;
+    background-color: #a9c2f8;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    
+}
+
+.button {
+    background-color: #faf605;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.mora{
+    color: #9b079b;
+}
+
+.button:hover {
+    background-color: #f8f542;
+    color: rgb(0, 0, 0);
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.foto-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #faf605;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto-img:hover {
+    transform: scale(1.1);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    margin-left: -40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cl-text {
+    color: #faf605;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Tablets y dispositivos móviles */
+@media (max-width: 1024px) {
+    .home {
+        margin-left: 25%;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    .icon {
+        align-items: center;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .home {
+        margin-top: 110px;
+
+    }
+
+    .icon {
+        margin-left: 1px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .foto {
+        margin-left: 310px;
+        margin-bottom: 100px;
+        margin-top: -190px;
+    }
+
+
+    .foto-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+}
+
+/* Móviles pequeños y pantallas pequeñas */
+@media (max-width: 480px) {
+    .home {
+        margin-left: 5%;
+    }
+
+    .text p {
+        max-width: 100%;
+    }
+}

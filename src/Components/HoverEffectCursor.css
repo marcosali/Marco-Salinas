@@ -1,0 +1,32 @@
+/* Estilos para un cursor predeterminado */
+.default-cursor {
+    cursor: default;
+}
+
+/* Estilos para un cursor de ayuda */
+.help-cursor {
+    cursor: help;
+}
+
+/* Estilos para un cursor de texto */
+.text-cursor {
+    cursor: text;
+}
+
+/* Estilos para un cursor de puntero (mano) */
+.pointer-cursor {
+    cursor: pointer;
+}
+/* Estilo para un cursor circular */
+.default-cursor {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #000; /* Color y grosor del borde del cursor */
+    position: fixed;
+    pointer-events: none; /* Evita que el cursor interfiera con los elementos debajo */
+    z-index: 9999; /* Asegura que el cursor esté por encima de otros elementos */
+    transform: translate(-50%, -50%);
+  }
+  
